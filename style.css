@@ -1,0 +1,87 @@
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) { ... }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) { ... }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) { ... }
+
+
+
+
+body {
+  background-color: #FAFAFA;
+}
+
+h1, h3, p {
+  margin: 0;
+  color: #3B3B3B;
+  
+}
+
+.h1 {
+    font-family: "Archivo Black";
+    font-size-adjust:calc(max-width);
+    font-size: 72px;
+    line-height: 108px;
+    letter-spacing: -2px;
+}
+
+.h3 {
+    font-family: "Archivo Narrow";
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0px;
+}
+
+.p3 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    margin-top: 16%;
+    text-align: bottom;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-content: space-between;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: 12%;
+    grid-gap: 20px;
+}
+
+.grid-item {
+  padding: 0px ;
+  text-align: left;
+}
+
+.grid-item2 {
+  display: grid;
+  grid-template-columns:  1fr;
+  align-items: right;
+  padding: 0px;
+}
+.grid-item2 .p3 {
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+.grid-item2 img {
+  justify-self: last baseline;
+  align-self: end;
+  margin-bottom: 0;
+  padding: 0;
+  max-width: 100%;
+  max-height: 256px;
+  color:#3B3B3B;
+}

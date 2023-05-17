@@ -46,9 +46,7 @@ button {
     padding: 20px;
     align-items: center;
 }
-.text {
-    text-align: left;
-    width: calc(66.66% - 16px);
+
 }
 .image {
     margin-bottom: 48px;

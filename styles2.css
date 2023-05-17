@@ -186,6 +186,7 @@ footer {
 .panel-out .text{
     width: calc(66.66% - 16px);
     float: left;
+    text-align: left;
 }
 .panel-image {
     width: calc(33.33% - 16px);

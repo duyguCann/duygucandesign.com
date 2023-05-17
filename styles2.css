@@ -48,6 +48,7 @@ button {
 }
 .text {
     text-align: left;
+    width: calc(66.66% - 16px);
 }
 .image {
     margin-bottom: 48px;

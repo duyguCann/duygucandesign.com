@@ -168,6 +168,14 @@ footer {
     overflow: hidden;
 }
 
+.panel-out {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: left;
+    padding: 16px;
+    display: none;
+}
 .panel .text {
     width: calc(66.66% - 16px);
     float: left;

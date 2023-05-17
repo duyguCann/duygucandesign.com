@@ -172,12 +172,15 @@ footer {
 }
 
 
-.panel .text , .panel-out .text{
+.panel .text {
     width: calc(66.66% - 16px);
     float: left;
 }
-
-.panel-image .panel-out .image{
+.panel-out .text{
+    width: calc(66.66% - 16px);
+    float: left;
+}
+.panel-image {
     width: calc(33.33% - 16px);
     float: right;
 }

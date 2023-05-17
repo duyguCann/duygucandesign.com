@@ -110,7 +110,7 @@ button {
     font-family: inherit;
 }
 
-.filter-option:onclick {
+.filter-option:active {
     background-color: #4A30F2;
     clear: both;
     display: inline-block;

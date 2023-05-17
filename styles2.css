@@ -51,6 +51,7 @@ button {
 }
 .image {
     margin-bottom: 48px;
+    text-align: center;
 }
 
 .image img {

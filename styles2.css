@@ -51,10 +51,11 @@ button {
 }
 .image {
     margin-bottom: 48px;
-    align-items: center;
 }
 
 .image img {
+    align-items: center;
+    text-align: center;
     max-width: 100%;
     height: auto;
     width: 196px;

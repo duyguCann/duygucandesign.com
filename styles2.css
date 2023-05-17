@@ -44,7 +44,6 @@ button {
 /* Content styles */
 .content {
     padding: 20px;
-    text-align: center;
     align-items: center;
 }
 
@@ -59,6 +58,7 @@ button {
 }
 
 .cta-title {
+    text-align: center;
     margin-bottom: 48px;
     font-size: 72px;
     letter-spacing: -1.5px;

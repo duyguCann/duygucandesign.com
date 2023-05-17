@@ -171,6 +171,13 @@ footer {
     overflow: hidden;
 }
 
+.panel-left {
+    text-align: left;
+    width: calc(66.66% - 16px);
+    float: left;
+    display: none;
+    overflow: hidden;
+}
 
 .panel .text {
     width: calc(66.66% - 16px);
@@ -189,7 +196,6 @@ footer {
     background-color: transparent;
     clear: both;
     display: block;
-    margin-top: 36px;
     padding: 12px 24px;
     border: none;
     color: #000;

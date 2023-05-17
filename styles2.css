@@ -45,7 +45,6 @@ button {
 .content {
     padding: 20px;
     align-items: center;
-    text-align:center;
 }
 
 .image {
@@ -173,7 +172,6 @@ footer {
     font-family: 'Roboto Mono', monospace;
     font-size: 18px;
     font-weight: 400;
-    text-align: left;
     padding: 16px;
     display: none;
 }

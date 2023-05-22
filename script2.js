@@ -12,3 +12,21 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+var filterOptions = document.querySelectorAll('.filter-option');
+var accordions = document.querySelectorAll('.accordion');
+
+filterOptions.forEach(function(option) {
+  option.addEventListener('click', function() {
+    var selectedFilter = this.dataset.filter;
+
+    accordions.forEach(function(accordion) {
+      var accordionTags = accordion.dataset.tags.split(',');
+
+      if (selectedFilter === 'all' || accordionTags.includes(selectedFilter)) {
+        accordion.style.display = 'block';
+      } else {
+        accordion.style.display = 'none';
+      }
+    });
+  });
+});

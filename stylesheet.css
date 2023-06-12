@@ -1,0 +1,156 @@
+.accordion-button.collapsed .accordion-button-icon::before {
+    content: "\f106";
+}
+
+body {
+    margin: 72px 72px
+}
+
+/* Filter */
+.filter-options {
+    text-align: left;
+}
+
+.filter-option {
+    background-color: transparent;
+    clear: both;
+    display: inline-block;
+    margin-top: 36px;
+    margin-bottom: 36px;
+    padding: 12px 24px;
+    color: #000;
+    cursor: pointer;
+    border: solid 2px;
+    border-radius: 64px;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+.filter-option:hover {
+    background-color: transparent;
+    clear: both;
+    display: inline-block;
+    margin-top: 36px;
+    margin-bottom: 36px;
+    padding: 12px 24px;
+    color: #4A30F2;
+    cursor: pointer;
+    border: solid 2px;
+    border-color: #4A30F2;
+    border-radius: 64px;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+.filter-option:active {
+    background-color: #4A30F2;
+    clear: both;
+    display: inline-block;
+    margin-top: 36px;
+    margin-bottom: 36px;
+    padding: 12px 24px;
+    color: #FAFAFA;
+    cursor: pointer;
+    border: solid 2px;
+    border-color: #4A30F2;
+    border-radius: 64px;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+/* Accordion styles */
+.accordion {
+    font-family: 'Roboto Mono', monospace;
+    cursor: pointer;
+    padding: 24px 16px 24px 16px;
+    font-weight: 600;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 36px;
+    transition: 0.1s;
+    font-family: inherit;
+    border-top: 2px solid black;
+
+}
+
+.active,
+.accordion:hover {
+    color: #4A30F2;
+}
+
+.accordion-icon {
+    float: right;
+}
+
+
+
+.btn-primary {
+    background-color: transparent;
+    clear: both;
+    display: block;
+    padding: 12px 24px;
+    border: none;
+    color: #000;
+    cursor: pointer;
+    border: solid 2px;
+    border-radius: 64px;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+/* Accordion icon styles */
+.accordion-icon::before {
+    content: '+';
+}
+
+.accordion.active .accordion-icon::before {
+    content: '-';
+}
+
+
+/* End Filter */
+
+.navbar-example2 {
+    background-color: none !important;
+}
+
+
+.bs-accordion-btn-icon {
+    background-image: url('images/plus-solid.svg') !important;
+}
+
+.accordion-button.collapsed .accordion-button-icon::before {
+    content: url('images/plus-solid.svg');
+}
+
+.accordion-collapse {
+    margin: 24px;
+    padding: 0px;
+}
+
+.row {
+    margin: 0px;
+    padding: 0px;
+}
+
+.card-body {
+    padding: 0px;
+    margin: 0px;
+}
+
+.accordion-body {
+    padding: 0px;
+    margin: 0px;
+}
+
+.card {
+    padding: 0px;
+    margin: 0px;
+}
+
+.section {
+    padding-top: 72px;
+    padding-bottom: 480px;
+}

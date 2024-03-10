@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DC</title>
+    <link href="./css/main.scss" rel="stylesheet">
+    <link href="./css/main.css" rel="stylesheet">
+</head>
+<body>
+    <section class="container ">
+        <nav class="navbar navbar-expand-lg d-flex non-padding-container">
+            <div class="container-fluid">
+                <a class="navbar-brand px-4 border-end border-primary" aria-current="page" href="index.html">
+                    <img src='../assets/LOGO.svg' alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item px-3 border-start border-primary">
+                            <a class="nav-link" href="index.html#works">WORKS</a>
+                        </li>
+                        <li class="nav-item px-3 border-start border-primary">
+                            <a class="nav-link" href="index.html#about">ABOUT ME</a>
+                        </li>
+                        <li class="nav-item px-3 border-start border-primary">
+                            <a class="nav-link" href="index.html#contact">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+    
+    <section id="works" class="custom-section container ">
+        <h2 class="mb-4" id="projectDetailTitle">Project Detail</h2>
+    </section>
+    
+    <!-- pageImage Section -->
+    <section id="pageImage" class="custom-section-detail container ">
+        <div class="row">
+            <!-- Resim kolonu -->
+            <div class="d-flex justify-content-center">
+                <img src="../assets/smarts.png" alt="Detail Image" class="img-fluid" id="mainImage">
+            </div>
+        </div>
+        <!-- İçerik buraya eklenebilir -->
+    </section>
+    
+    <!-- firstInfo Section -->
+    <section id="firstInfo" class="custom-section-detail container ">
+        <div class="row">
+            <!-- Metin kolonu -->
+            <div class="col-md-6 d-flex justify-content-center">
+                <img src="../assets/smarts.png" alt="Detail Image" class="img-fluid" id="firstInfoImage">
+            </div>
+            <!-- Resim kolonu -->
+            <div class="col-md-6">
+                <p id="firstInfoText">A phone application that reduces the complexity in banking transactions.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- secondInfo Section -->
+    <section id="secondInfo" class="custom-section container ">
+        <div class="row">
+            <!-- Resim kolonu -->
+            <div class="col-md-6">
+                <p id="secondInfoText" >A phone application that reduces the complexity in banking transactions.</p>
+            </div>
+            <!-- Metin kolonu -->
+            <div class="col-md-6 d-flex justify-content-center">
+                <img src="../assets/smarts.png" alt="Detail Image" class="img-fluid" id="secondInfoImage">
+            </div>
+        </div>
+    </section>
+    <script src="js/detail.js" type="module"></script>
+</body>
+</html>

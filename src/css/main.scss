@@ -1,0 +1,25 @@
+$primary: black;
+$success:  #4A30F2;
+$enable-responsive-font-sizes: true;
+$accordion-icon-color:black;
+
+$font-size-base: 1rem;
+$h2-font-size: 4rem;
+$accordion-button-icon:url("data:image/svg+xml,<svg width='30' height='31' viewBox='0 0 30 31' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M29.375 15.5C29.375 16.7656 28.3203 17.8203 27.125 17.8203H17V27.9453C17 29.1406 15.9453 30.125 14.75 30.125C13.4844 30.125 12.5 29.1406 12.5 27.9453V17.8203H2.375C1.10938 17.8203 0.125 16.7656 0.125 15.5C0.125 14.3047 1.10938 13.3203 2.375 13.3203H12.5V3.19531C12.5 1.92969 13.4844 0.875 14.75 0.875C15.9453 0.875 17 1.92969 17 3.19531V13.3203H27.125C28.3203 13.25 29.375 14.3047 29.375 15.5Z' fill='#3B3B3B'/></svg>");
+$accordion-button-active-icon:url("data:image/svg+xml,<svg width='30' height='5' viewBox='0 0 30 5' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M27.125 4.75H2.375C1.10938 4.75 0.125 3.76562 0.125 2.5C0.125 1.30469 1.10938 0.25 2.375 0.25H27.125C28.3203 0.25 29.375 1.30469 29.375 2.5C29.375 3.76562 28.3203 4.75 27.125 4.75Z' fill='#3B3B3B'/></svg>");
+$accordion-button-active-bg: transparent;
+$accordion-button-active-color: #4A30F2;
+$accordion-button-focus-border-color: red;
+$accordion-button-focus-box-shadow: "";
+$accordion-border-color: black;
+$accordion-border-radius:0;
+
+$btn-border-radius: 10rem;
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@mixin make-container($padding-x: $container-padding-x * 0.5){
+    margin-right: -$padding-x; 
+    margin-left: -$padding-x; 
+  }
+  .non-padding-container{
+    @include make-container();
+  }

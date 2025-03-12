@@ -4,47 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PDF Görüntüleyici</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
     <style>
-        * {
+        html, body {
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-        }
-
-        html, body {
             width: 100%;
             height: 100%;
-            overflow: hidden; /* Sayfanın scroll çubuğunu engelle */
-        }
-
-        .pdf-container {
-            width: 100vw;
-            height: 100vh;
+            overflow: hidden;
             display: flex;
             justify-content: center;
             align-items: center;
         }
 
-        iframe {
+        canvas {
             width: 100%;
-            height: 100%;
-            border: none;
-        }
-
-        /* Mobil cihazlar için özel ayarlamalar */
-        @media (max-width: 768px) {
-            .pdf-container {
-                height: 100vh; /* Mobilde tam ekran */
-            }
-            iframe {
-                height: 100vh;
-            }
+            height: auto;
         }
     </style>
 </head>
 <body>
-    <div class="pdf-container">
-        <iframe src="portfolio-19-09-2024.pdf"></iframe>
-    </div>
+    <canvas id="pdf-viewer"></canvas>
+
+    <script>
+        var url = 'portfolio-19-09-2024.pdf';
+
+        var loadingTask = pdfjsLib.getDocument(url);
+        loadingTask.promise.then(function(pdf) {
+            pdf.getPage(1).then(function(page) {
+                var scale = 1.5;
+                var viewport = page.getViewport({scale: scale});
+                
+                var canvas = document.getElementById('pdf-viewer');
+                var context = canvas.getContext('2d');
+                canvas.width = viewport.width;
+                canvas.height = viewport.height;
+
+                var renderContext = {
+                    canvasContext: context,
+                    viewport: viewport
+                };
+                page.render(renderContext);
+            });
+        });
+    </script>
 </body>
 </html>

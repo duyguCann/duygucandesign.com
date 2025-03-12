@@ -5,20 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PDF Görüntüleyici</title>
     <style>
-        html, body {
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
             width: 100%;
             height: 100%;
-            overflow: hidden; /* Sayfanın kendi scroll çubuğunu kaldır */
+            overflow: hidden; /* Sayfanın scroll çubuğunu engelle */
         }
 
         .pdf-container {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         iframe {
@@ -27,10 +31,13 @@
             border: none;
         }
 
-        /* Mobil uyumluluk için */
+        /* Mobil cihazlar için özel ayarlamalar */
         @media (max-width: 768px) {
+            .pdf-container {
+                height: 100vh; /* Mobilde tam ekran */
+            }
             iframe {
-                height: 100vh; /* Tam ekran kaplasın */
+                height: 100vh;
             }
         }
     </style>

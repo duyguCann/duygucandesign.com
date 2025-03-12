@@ -8,18 +8,36 @@
         html, body {
             margin: 0;
             padding: 0;
+            width: 100%;
+            height: 100%;
             overflow: hidden; /* Sayfanın kendi scroll çubuğunu kaldır */
+        }
+
+        .pdf-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
             height: 100%;
         }
+
         iframe {
             width: 100%;
-            height: 100vh; /* Tüm ekranı kaplasın */
+            height: 100%;
             border: none;
-            overflow: hidden;
+        }
+
+        /* Mobil uyumluluk için */
+        @media (max-width: 768px) {
+            iframe {
+                height: 100vh; /* Tam ekran kaplasın */
+            }
         }
     </style>
 </head>
 <body>
-    <iframe src="portfolio-19-09-2024.pdf"></iframe>
+    <div class="pdf-container">
+        <iframe src="portfolio-19-09-2024.pdf"></iframe>
+    </div>
 </body>
 </html>
